@@ -1,0 +1,13 @@
+{
+	"js": {
+		"indent_size": 2,
+		"indent_with_tabs": false,
+		"jslint_happy": true,
+		"end_with_newline": true,
+		"brace_style": "expand",
+    "function_name": true,
+    "space_after_anon_function": true,
+    "bracepadding": true,
+    "wrap_line_length": 60,
+	}
+}

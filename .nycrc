@@ -1,0 +1,23 @@
+{
+"include": [
+  "src/**/*.js"
+],
+  "exclude": [
+  ],
+  "reporter": [
+    "text",
+    "html"
+  ],
+  "require": [
+    "babel-register"
+  ],
+  "extension": [
+    ".jsx",
+    ".js"
+  ],
+  "sourceMap": false,
+  "instrument": true,
+  "cache": true,
+  "all": true,
+  "report-dir": "./alternative"
+}

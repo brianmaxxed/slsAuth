@@ -1,0 +1,44 @@
+[{
+    "_id" : ObjectId("5af563078f6aae959e5eb359"),
+    "accountId" : "08qv2018",
+    "businessName" : "quixelvideo",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0,
+    "active" : true
+  },
+  {
+    "_id" : ObjectId("5af564b7763c15cb087b66ef"),
+    "accountId" : "08bh2018",
+    "businessName" : "bullhorn",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0
+  },
+  {
+    "_id" : ObjectId("5af564c3763c15cb087b66f0"),
+    "accountId" : "08sb2018",
+    "businessName" : "starbuzz",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0
+  },
+  {
+    "_id" : ObjectId("5af564ce763c15cb087b66f1"),
+    "accountId" : "08ph2018",
+    "businessName" : "poochiehotel",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0
+  },
+  {
+    "_id" : ObjectId("5af564df763c15cb087b66f2"),
+    "accountId" : "08it2018",
+    "businessName" : "invisiontek",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0
+  },
+  {
+    "_id" : ObjectId("5af5711f1d094c7719d4888d"),
+    "accountId" : "12345",
+    "businessName" : "TEST",
+    "agreementVersion" : 1.0,
+    "userAgreementVersion" : 1.0
+  }
+];

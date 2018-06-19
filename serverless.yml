@@ -1,0 +1,47 @@
+environment:
+  SLS_DEBUG: true
+
+service: serverlessAuth
+
+custom:
+  defaultStage: dev
+  stage: ${opt:stage, self:custom.defaultStage}
+  customDomain:
+    stage: ${self:custom.stage}
+    basePath: ''
+    domainName: auth.${self:custom.stage}.sizelr.com
+    createRoute53Record: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${self:custom.stage}
+  region: us-east-1
+  memorySize: 128
+  profile: ${self:custom.stage}SizelrAuth
+
+package:
+  include:
+    - package.json
+    - .env
+    - .env.example
+    - src/**
+    - dist/server.js
+
+functions:
+  app:
+    handler: dist/server.handler
+    timeout: 4
+    cors:
+        - enabled: true
+          origin: <string>
+          headers: <string>
+          methods: <string>
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+response:
+  headers:
+    Content-Type: "‘application/json’"
+    Content-Encoding: “‘gzip’”
