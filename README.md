@@ -5,6 +5,10 @@ This is just a coding example project showcasing my ability to write ES6+ code f
 There is a .env file that has a sample MongoDB test DB setup for the time beihg.
 I will remove that DB if too much traffic hits in the next week or two and notify those who requested to see this code.
 
+The code demonstrates a particular way to write MongoDB document logic that can be locked down to business rules efficiently. You know what's in your MongoDB data and can increase flexibility through the model business logic when appropriate.
+
+The main class in the models folder is the User.js user model. It has all the REST enpoint logic there for user calls. THe base class (UserBase) would contain any CRUD or helper related logic. It's easier to test the two seperately as business ruls change. 
+
 
 # Technologies Used:
 NodeJs 8.10
